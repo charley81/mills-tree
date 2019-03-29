@@ -1,0 +1,38 @@
+// Containers & Backgrounds
+.container {
+  max-width: $site-width;
+  padding: 0 1rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.bg {
+  &-dark {
+    background: $dark-color;
+    color: #fff;
+  }
+  &-light {
+    background: $ligth-color;
+    color: #333;
+  }
+  &-primary {
+    background: $primary-color;
+    color: #fff;
+  }
+  &-secondary {
+    background: $secondary-color;
+    color: #fff;
+  }
+  &-medium {
+    background: $medium-color;
+    color: #333;
+  }
+}
+
+// Buttons
+
+// Padding
+
+// Margin
+
+// Utilities
