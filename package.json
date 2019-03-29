@@ -1,0 +1,27 @@
+{
+  "name": "mills-tree",
+  "version": "1.0.0",
+  "description": "Website for tree service company Mills Tree Service in Atlanta, GA",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "Mills",
+    "Tree",
+    "Experts",
+    "Tree",
+    "Service",
+    "Tree",
+    "Sergeons",
+    "Tree",
+    "Trimming",
+    "Tree",
+    "Removal"
+  ],
+  "author": "Chris Harley",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
