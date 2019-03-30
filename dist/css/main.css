@@ -294,6 +294,29 @@ h6 {
   #contact-a .contact-content a {
     margin-top: 2rem; }
 
+#community-a .community-info {
+  display: flex; }
+  #community-a .community-info div {
+    flex: 1; }
+  #community-a .community-info .community-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    padding: 1rem; }
+
+#community-b ul {
+  display: flex;
+  justify-content: center; }
+  #community-b ul li {
+    padding: 1rem;
+    transition: all 0.3s ease; }
+    #community-b ul li:hover {
+      color: #342215;
+      letter-spacing: 2px; }
+
 #main-footer .footer-content p {
   margin-bottom: 1rem; }
 
