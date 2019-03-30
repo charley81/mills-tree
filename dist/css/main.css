@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   padding: 0 1rem;
   margin: auto;
   overflow: hidden; }
@@ -56,8 +56,7 @@ button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background: #342215;
-  color: #fff;
-  letter-spacing: 5px; }
+  color: #fff; }
 
 .p-1 {
   padding: 1rem; }
@@ -130,13 +129,8 @@ input[class^="btn-"]:hover {
   margin-bottom: 1rem;
   text-transform: uppercase;
   line-height: 1.2;
-  font-weight: 100; }
-
-.line {
-  height: 2px;
-  width: 10px;
-  background: #4f5a40;
-  margin: 0 auto 2rem; }
+  font-weight: 100;
+  letter-spacing: 2px; }
 
 * {
   margin: 0;
@@ -147,7 +141,8 @@ body {
   background: #c2e1c2;
   color: #333;
   line-height: 1.5;
-  font-family: "Quicksand", sans-serif; }
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem; }
 
 a {
   text-decoration: none;
@@ -168,7 +163,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Staatliches", cursive; }
+  font-family: "Staatliches", cursive;
+  font-weight: 100; }
 
 #main-nav {
   color: #fff;
@@ -189,7 +185,7 @@ h6 {
   #main-nav ul {
     display: flex; }
     #main-nav ul li {
-      padding: 0 0.5rem; }
+      padding: 0 1rem; }
       #main-nav ul li a {
         color: #fff;
         padding-bottom: 0.5rem;
@@ -201,8 +197,8 @@ h6 {
           border-color: #c2e1c2; }
 
 #header-home {
-  height: 100vh;
-  background: rgba(51, 51, 51, 0.5);
+  height: 50vh;
+  background: rgba(51, 51, 51, 0.7);
   color: #fff;
   position: relative; }
   #header-home:before {
@@ -216,13 +212,26 @@ h6 {
     z-index: -1; }
   #header-home .header-content {
     text-align: center;
-    margin-top: 20vh; }
+    padding: 1rem; }
     #header-home .header-content .title {
-      font-size: 6rem;
       letter-spacing: 2px;
-      font-weight: 100; }
-    #header-home .header-content p {
-      font-size: 2.5rem; }
+      font-weight: 100;
+      font-size: 3rem; }
+
+#header-inner {
+  height: 20vh;
+  background: rgba(51, 51, 51, 0.7);
+  color: #fff;
+  position: relative; }
+  #header-inner:before {
+    position: absolute;
+    content: "";
+    background: url("../img/showcase.jpg") no-repeat center top/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
 
 #home-a .about-content p {
   line-height: 1.8; }
@@ -230,3 +239,65 @@ h6 {
 #home-a .about-content h3 {
   padding: 1rem 0;
   letter-spacing: 3px; }
+
+#home-b .services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  #home-b .services div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    position: relative;
+    background: rgba(0, 33, 13, 0.7);
+    padding: 3rem;
+    color: #fff; }
+    #home-b .services div:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+    #home-b .services div h3 {
+      padding: 1rem 0; }
+    #home-b .services div:nth-child(1):before {
+      background: url(../img/services/removal.jpg) no-repeat center center/cover; }
+    #home-b .services div:nth-child(2):before {
+      background: url(../img/services/trimming.jpg) no-repeat center center/cover; }
+    #home-b .services div:nth-child(3):before {
+      background: url(../img/services/stump.jpg) no-repeat center center/cover; }
+
+#home-c .about-info {
+  display: flex; }
+  #home-c .about-info div {
+    flex: 1; }
+    #home-c .about-info div.about-content {
+      padding: 3rem; }
+      #home-c .about-info div.about-content h3 {
+        padding-top: 20%; }
+
+#home-d .info {
+  display: flex; }
+  #home-d .info div {
+    flex: 1;
+    padding: 1rem;
+    text-align: center; }
+  #home-d .info div:nth-child(1) {
+    border-right: 3px solid #4f5a40; }
+
+#contact-a {
+  padding: 3rem; }
+  #contact-a .section-title {
+    margin-bottom: 1rem; }
+  #contact-a .contact-content a {
+    margin-top: 2rem; }
+
+#main-footer .footer-content p {
+  margin-bottom: 1rem; }
+
+#main-footer .footer-content a {
+  color: #fff; }
+  #main-footer .footer-content a:hover {
+    color: #c2e1c2; }

@@ -15,6 +15,7 @@ body {
   color: #333;
   line-height: 1.5;
   font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
 }
 
 a {
@@ -40,6 +41,7 @@ h4,
 h5,
 h6 {
   font-family: "Staatliches", cursive;
+  font-weight: 100;
 }
 
 #main-nav {
@@ -66,7 +68,7 @@ h6 {
   ul {
     display: flex;
     li {
-      padding: 0 0.5rem;
+      padding: 0 1rem;
       a {
         color: #fff;
         padding-bottom: 0.5rem;
@@ -87,9 +89,10 @@ h6 {
 
 // Header
 #header {
+  // Header Home
   &-home {
-    height: 100vh;
-    background: rgba(51, 51, 51, 0.5);
+    height: 50vh;
+    background: rgba(51, 51, 51, 0.7);
     color: #fff;
     position: relative;
 
@@ -106,31 +109,171 @@ h6 {
 
     .header-content {
       text-align: center;
-      margin-top: 20vh;
+      padding: 1rem;
 
       .title {
-        font-size: 6rem;
         letter-spacing: 2px;
         font-weight: 100;
+        font-size: 3rem;
       }
+    }
+  }
 
-      p {
-        font-size: 2.5rem;
-      }
+  &-inner {
+    height: 20vh;
+    background: rgba(51, 51, 51, 0.7);
+    color: #fff;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background: $bg-image no-repeat center top/cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
     }
   }
 }
 
 // Home
 #home {
+  // Home A: Servicing Area
   &-a {
     .about-content {
       p {
         line-height: 1.8;
       }
+
       h3 {
         padding: 1rem 0;
         letter-spacing: 3px;
+      }
+    }
+  }
+
+  // Home B: Services
+  &-b {
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 400px;
+        position: relative;
+        background: rgba(0, 33, 13, 0.7);
+        padding: 3rem;
+        color: #fff;
+
+        &:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+        }
+
+        h3 {
+          padding: 1rem 0;
+        }
+
+        // Child 1
+        &:nth-child(1) {
+          &:before {
+            background: url(../img/services/removal.jpg) no-repeat center
+              center/cover;
+          }
+        }
+
+        // Child 2
+        &:nth-child(2) {
+          &:before {
+            background: url(../img/services/trimming.jpg) no-repeat center
+              center/cover;
+          }
+        }
+
+        // Child 3
+        &:nth-child(3) {
+          &:before {
+            background: url(../img/services/stump.jpg) no-repeat center
+              center/cover;
+          }
+        }
+      }
+    }
+  }
+
+  // Home C: About
+  &-c {
+    .about-info {
+      display: flex;
+
+      div {
+        flex: 1;
+
+        &.about-content {
+          padding: 3rem;
+
+          h3 {
+            padding-top: 20%;
+          }
+        }
+      }
+    }
+  }
+
+  // Home D: Info
+  &-d {
+    .info {
+      display: flex;
+
+      div {
+        flex: 1;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      div:nth-child(1) {
+        border-right: 3px solid $primary-color;
+      }
+    }
+  }
+}
+
+// Contact
+#contact {
+  &-a {
+    padding: 3rem;
+    .section-title {
+      margin-bottom: 1rem;
+    }
+    .contact-content {
+      a {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+// Footer
+#main-footer {
+  .footer-content {
+    p {
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #fff;
+
+      &:hover {
+        color: $light-color;
       }
     }
   }
