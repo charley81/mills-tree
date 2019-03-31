@@ -138,7 +138,7 @@ h6 {
   }
 }
 
-// Home
+// Home Page
 #home {
   // Home A: Servicing Area
   &-a {
@@ -248,7 +248,7 @@ h6 {
   }
 }
 
-// Contact
+// Contact Page
 #contact {
   &-a {
     padding: 3rem;
@@ -263,7 +263,7 @@ h6 {
   }
 }
 
-// Community
+// Community Page
 #community {
   // Community A: Community Info
   &-a {
@@ -298,8 +298,49 @@ h6 {
 
         &:hover {
           color: $dark-color;
-          letter-spacing: 2px;
+          letter-spacing: 1px;
         }
+      }
+    }
+  }
+}
+
+// Removal Page
+#removal {
+  // Removal A: Info
+  &-a {
+    .removal-info {
+      display: grid;
+      grid-template-areas:
+        "remcontent remimage"
+        "tagline tagline";
+      grid-gap: 1rem;
+
+      // Grid Areas
+      .removal-content {
+        grid-area: remcontent;
+      }
+      .removal-image {
+        grid-area: remimage;
+      }
+      .tagline {
+        grid-area: tagline;
+      }
+    }
+  }
+
+  // Removal B: Signs
+  &-b {
+    .removal-signs {
+      display: flex;
+
+      div {
+        flex: 1;
+      }
+
+      ul {
+        text-align: left;
+        line-height: 2;
       }
     }
   }

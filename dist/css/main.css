@@ -315,7 +315,26 @@ h6 {
     transition: all 0.3s ease; }
     #community-b ul li:hover {
       color: #342215;
-      letter-spacing: 2px; }
+      letter-spacing: 1px; }
+
+#removal-a .removal-info {
+  display: grid;
+  grid-template-areas: "remcontent remimage" "tagline tagline";
+  grid-gap: 1rem; }
+  #removal-a .removal-info .removal-content {
+    grid-area: remcontent; }
+  #removal-a .removal-info .removal-image {
+    grid-area: remimage; }
+  #removal-a .removal-info .tagline {
+    grid-area: tagline; }
+
+#removal-b .removal-signs {
+  display: flex; }
+  #removal-b .removal-signs div {
+    flex: 1; }
+  #removal-b .removal-signs ul {
+    text-align: left;
+    line-height: 2; }
 
 #main-footer .footer-content p {
   margin-bottom: 1rem; }
