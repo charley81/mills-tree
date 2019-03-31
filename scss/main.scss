@@ -67,8 +67,10 @@ h6 {
 
   ul {
     display: flex;
+
     li {
       padding: 0 1rem;
+
       a {
         color: #fff;
         padding-bottom: 0.5rem;
@@ -89,6 +91,7 @@ h6 {
 
 // Header
 #header {
+
   // Header Home
   &-home {
     height: 50vh;
@@ -114,7 +117,7 @@ h6 {
       .title {
         letter-spacing: 2px;
         font-weight: 100;
-        font-size: 3rem;
+        font-size: 6rem;
       }
     }
   }
@@ -140,16 +143,12 @@ h6 {
 
 // Home Page
 #home {
+
   // Home A: Servicing Area
   &-a {
     .about-content {
       p {
         line-height: 1.8;
-      }
-
-      h3 {
-        padding: 1rem 0;
-        letter-spacing: 3px;
       }
     }
   }
@@ -180,31 +179,29 @@ h6 {
           z-index: -1;
         }
 
-        h3 {
-          padding: 1rem 0;
+        a {
+          width: 70%;
+          margin: 0 auto;
         }
 
         // Child 1
         &:nth-child(1) {
           &:before {
-            background: url(../img/services/removal.jpg) no-repeat center
-              center/cover;
+            background: url(../img/services/removal.jpg) no-repeat center center/cover;
           }
         }
 
         // Child 2
         &:nth-child(2) {
           &:before {
-            background: url(../img/services/trimming.jpg) no-repeat center
-              center/cover;
+            background: url(../img/services/trimming.jpg) no-repeat center center/cover;
           }
         }
 
         // Child 3
         &:nth-child(3) {
           &:before {
-            background: url(../img/services/stump.jpg) no-repeat center
-              center/cover;
+            background: url(../img/services/stump.jpg) no-repeat center center/cover;
           }
         }
       }
@@ -215,16 +212,18 @@ h6 {
   &-c {
     .about-info {
       display: flex;
+      height: 600px;
 
       div {
         flex: 1;
+        height: 600px;
 
         &.about-content {
-          padding: 3rem;
-
-          h3 {
-            padding-top: 20%;
-          }
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
@@ -252,9 +251,11 @@ h6 {
 #contact {
   &-a {
     padding: 3rem;
+
     .section-title {
       margin-bottom: 1rem;
     }
+
     .contact-content {
       a {
         margin-top: 2rem;
@@ -265,6 +266,7 @@ h6 {
 
 // Community Page
 #community {
+
   // Community A: Community Info
   &-a {
     .community-info {
@@ -280,7 +282,6 @@ h6 {
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 400px;
         padding: 1rem;
       }
     }
@@ -307,6 +308,7 @@ h6 {
 
 // Removal Page
 #removal {
+
   // Removal A: Info
   &-a {
     .section-title {
@@ -324,9 +326,11 @@ h6 {
       .removal-content {
         grid-area: remcontent;
       }
+
       .removal-image {
         grid-area: remimage;
       }
+
       .tagline {
         grid-area: tagline;
       }
@@ -340,6 +344,10 @@ h6 {
 
       div {
         flex: 1;
+
+        &.signs-content {
+          text-align: left;
+        }
       }
 
       ul {
@@ -352,12 +360,13 @@ h6 {
 
 // Trim Page
 #trim {
-  .section-title {
-    text-align: left;
-  }
 
   // Trim A: Info
   &-a {
+    .section-title {
+      text-align: left;
+    }
+
     .trim-info {
       display: flex;
 
@@ -379,13 +388,19 @@ h6 {
       .signs-image {
         grid-area: signimage;
       }
+
       .signs-content {
         grid-area: signcontent;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         ul {
           text-align: left;
         }
       }
+
       .signs-tagline {
         grid-area: tagline;
         text-align: center;
@@ -401,11 +416,13 @@ h6 {
 
 // Stumps Page
 #stump {
+
   // Stumps A: Info
   &-a {
     .section-title {
       text-align: left;
     }
+
     .stump-info {
       display: flex;
 
@@ -438,6 +455,7 @@ h6 {
     p {
       margin-bottom: 1rem;
     }
+
     a {
       color: #fff;
 

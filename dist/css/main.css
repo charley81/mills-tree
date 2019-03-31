@@ -30,7 +30,8 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  outline: none; }
 
 .btn-primary {
   background: #4f5a40;
@@ -56,7 +57,8 @@ button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background: #342215;
-  color: #fff; }
+  color: #fff;
+  border: 1px solid #80ab82; }
 
 .p-1 {
   padding: 1rem; }
@@ -119,13 +121,17 @@ input[class^="btn-"]:hover {
   color: #c2e1c2; }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   line-height: 1.2;
   font-weight: 100; }
 
+.m-heading {
+  font-size: 2rem;
+  letter-spacing: 2px; }
+
 .lead {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   line-height: 1.2;
@@ -216,7 +222,7 @@ h6 {
     #header-home .header-content .title {
       letter-spacing: 2px;
       font-weight: 100;
-      font-size: 3rem; }
+      font-size: 6rem; }
 
 #header-inner {
   height: 20vh;
@@ -235,10 +241,6 @@ h6 {
 
 #home-a .about-content p {
   line-height: 1.8; }
-
-#home-a .about-content h3 {
-  padding: 1rem 0;
-  letter-spacing: 3px; }
 
 #home-b .services {
   display: grid;
@@ -260,8 +262,9 @@ h6 {
       width: 100%;
       height: 100%;
       z-index: -1; }
-    #home-b .services div h3 {
-      padding: 1rem 0; }
+    #home-b .services div a {
+      width: 70%;
+      margin: 0 auto; }
     #home-b .services div:nth-child(1):before {
       background: url(../img/services/removal.jpg) no-repeat center center/cover; }
     #home-b .services div:nth-child(2):before {
@@ -270,13 +273,17 @@ h6 {
       background: url(../img/services/stump.jpg) no-repeat center center/cover; }
 
 #home-c .about-info {
-  display: flex; }
+  display: flex;
+  height: 600px; }
   #home-c .about-info div {
-    flex: 1; }
+    flex: 1;
+    height: 600px; }
     #home-c .about-info div.about-content {
-      padding: 3rem; }
-      #home-c .about-info div.about-content h3 {
-        padding-top: 20%; }
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
 
 #home-d .info {
   display: flex; }
@@ -304,7 +311,6 @@ h6 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 400px;
     padding: 1rem; }
 
 #community-b ul {
@@ -335,11 +341,13 @@ h6 {
   display: flex; }
   #removal-b .removal-signs div {
     flex: 1; }
+    #removal-b .removal-signs div.signs-content {
+      text-align: left; }
   #removal-b .removal-signs ul {
     text-align: left;
     line-height: 2; }
 
-#trim .section-title {
+#trim-a .section-title {
   text-align: left; }
 
 #trim-a .trim-info {
@@ -353,7 +361,11 @@ h6 {
   #trim-b .trim-signs .signs-image {
     grid-area: signimage; }
   #trim-b .trim-signs .signs-content {
-    grid-area: signcontent; }
+    grid-area: signcontent;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     #trim-b .trim-signs .signs-content ul {
       text-align: left; }
   #trim-b .trim-signs .signs-tagline {
