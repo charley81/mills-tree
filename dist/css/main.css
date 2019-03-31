@@ -317,6 +317,9 @@ h6 {
       color: #342215;
       letter-spacing: 1px; }
 
+#removal-a .section-title {
+  text-align: left; }
+
 #removal-a .removal-info {
   display: grid;
   grid-template-areas: "remcontent remimage" "tagline tagline";
@@ -335,6 +338,46 @@ h6 {
   #removal-b .removal-signs ul {
     text-align: left;
     line-height: 2; }
+
+#trim .section-title {
+  text-align: left; }
+
+#trim-a .trim-info {
+  display: flex; }
+  #trim-a .trim-info div {
+    flex: 1; }
+
+#trim-b .trim-signs {
+  display: grid;
+  grid-template-areas: "signimage signcontent" "tagline tagline"; }
+  #trim-b .trim-signs .signs-image {
+    grid-area: signimage; }
+  #trim-b .trim-signs .signs-content {
+    grid-area: signcontent; }
+    #trim-b .trim-signs .signs-content ul {
+      text-align: left; }
+  #trim-b .trim-signs .signs-tagline {
+    grid-area: tagline;
+    text-align: center;
+    padding: 1rem 0; }
+  #trim-b .trim-signs a {
+    margin: 1rem 0; }
+
+#stump-a .section-title {
+  text-align: left; }
+
+#stump-a .stump-info {
+  display: flex; }
+  #stump-a .stump-info div {
+    flex: 1; }
+
+#stump-b .stump-signs {
+  display: flex; }
+  #stump-b .stump-signs div {
+    flex: 1; }
+    #stump-b .stump-signs div ul {
+      text-align: left;
+      line-height: 2rem; }
 
 #main-footer .footer-content p {
   margin-bottom: 1rem; }
