@@ -267,47 +267,6 @@ h6 {
   }
 }
 
-// Community Page
-#community {
-  // Community A: Community Info
-  &-a {
-    .community-info {
-      display: flex;
-
-      div {
-        flex: 1;
-      }
-
-      .community-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 1rem;
-      }
-    }
-  }
-
-  // Community B: Dayglow Info
-  &-b {
-    ul {
-      display: flex;
-      justify-content: center;
-
-      li {
-        padding: 1rem;
-        transition: all 0.3s ease;
-
-        &:hover {
-          color: $dark-color;
-          letter-spacing: 1px;
-        }
-      }
-    }
-  }
-}
-
 // Removal Page
 #removal {
   // Removal A: Info

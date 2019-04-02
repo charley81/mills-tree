@@ -304,28 +304,6 @@ h6 {
   #contact-a .contact-content a {
     margin-top: 2rem; }
 
-#community-a .community-info {
-  display: flex; }
-  #community-a .community-info div {
-    flex: 1; }
-  #community-a .community-info .community-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem; }
-
-#community-b ul {
-  display: flex;
-  justify-content: center; }
-  #community-b ul li {
-    padding: 1rem;
-    transition: all 0.3s ease; }
-    #community-b ul li:hover {
-      color: #342215;
-      letter-spacing: 1px; }
-
 #removal-a .section-title {
   text-align: left; }
 
@@ -448,13 +426,13 @@ h6 {
     flex-direction: column; }
   #stump-b .stump-signs {
     flex-direction: column;
-    padding: 0 div; }
-    #stump-b .stump-signs :nth-child(1) {
-      order: 2; } }
+    padding: 0; } }
 
 @media (max-width: 600px) {
   #header-home .header-content .lead {
     font-size: 2rem; }
+  #header-inner {
+    height: 10vh; }
   #home-a .about-content p:nth-child(1) {
     border-bottom: 1px solid #7dcd85; }
   #home-b .services {
