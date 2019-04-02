@@ -1,0 +1,33 @@
+// Widescreen
+
+// Desktop {
+@media (min-height: 700px) {
+  #header {
+    &-home {
+      .header-content {
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+
+  // Utility Classes
+  .lead {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+// Tablet
+
+// Mobile

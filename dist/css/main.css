@@ -31,7 +31,8 @@
   cursor: pointer;
   border-radius: 5px;
   transition: all 0.3s;
-  outline: none; }
+  outline: none;
+  font-size: 1rem; }
 
 .btn-primary {
   background: #4f5a40;
@@ -131,7 +132,7 @@ input[class^="btn-"]:hover {
   letter-spacing: 2px; }
 
 .lead {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   line-height: 1.2;
@@ -147,8 +148,7 @@ body {
   background: #c2e1c2;
   color: #333;
   line-height: 1.5;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.1rem; }
+  font-family: "Quicksand", sans-serif; }
 
 a {
   text-decoration: none;
@@ -182,16 +182,17 @@ h6 {
   #main-nav h2 {
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 2px; }
-  #main-nav .logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 1rem; }
+    #main-nav h2 .logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 1rem; }
   #main-nav ul {
     display: flex; }
     #main-nav ul li {
-      padding: 0 1rem; }
+      padding: 0 0.5rem;
+      letter-spacing: 2px; }
       #main-nav ul li a {
         color: #fff;
         padding-bottom: 0.5rem;
@@ -203,7 +204,7 @@ h6 {
           border-color: #c2e1c2; }
 
 #header-home {
-  height: 50vh;
+  height: 100vh;
   background: rgba(51, 51, 51, 0.7);
   color: #fff;
   position: relative; }
@@ -222,7 +223,9 @@ h6 {
     #header-home .header-content .title {
       letter-spacing: 2px;
       font-weight: 100;
-      font-size: 6rem; }
+      font-size: 4rem; }
+    #header-home .header-content p {
+      font-size: 3rem; }
 
 #header-inner {
   height: 20vh;
@@ -262,9 +265,8 @@ h6 {
       width: 100%;
       height: 100%;
       z-index: -1; }
-    #home-b .services div a {
-      width: 70%;
-      margin: 0 auto; }
+    #home-b .services div .btn {
+      padding: 0.5rem 2rem; }
     #home-b .services div:nth-child(1):before {
       background: url(../img/services/removal.jpg) no-repeat center center/cover; }
     #home-b .services div:nth-child(2):before {
@@ -398,3 +400,17 @@ h6 {
   color: #fff; }
   #main-footer .footer-content a:hover {
     color: #c2e1c2; }
+
+@media (min-height: 700px) {
+  #header-home .header-content {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    justify-content: center;
+    align-items: center; }
+    #header-home .header-content .title {
+      font-size: 6rem; }
+  .lead {
+    font-size: 2rem; }
+  .btn {
+    font-size: 1.2rem; } }
