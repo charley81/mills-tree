@@ -1,33 +1,143 @@
 // Widescreen
+@media (min-width: 1300px) {
+  body {
+    font-size: 1.5rem;
+  }
 
-// Desktop {
-@media (min-height: 700px) {
+  #main-nav {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
   #header {
     &-home {
       .header-content {
-        display: flex;
-        flex-direction: column;
-        height: 1000px;
-        justify-content: center;
-        align-items: center;
+        margin-top: 10rem;
+      }
+    }
+  }
+}
 
-        .title {
-          font-size: 6rem;
+// Desktop
+
+// min-height 700px
+// @media (min-height: 700px) {
+//   #header {
+//     &-home {
+//       .header-content {
+//         display: flex;
+//         flex-direction: column;
+//         height: 1000px;
+//         justify-content: center;
+//         align-items: center;
+
+//         .title {
+//           font-size: 6rem;
+//         }
+//       }
+//     }
+//   }
+
+//   // Utility Classes
+//   .lead {
+//     font-size: 2rem;
+//   }
+
+//   .btn {
+//     font-size: 1.2rem;
+//   }
+// }
+
+// Tablet
+@media (max-width: 750px) {
+  #main-nav {
+    h2 {
+      display: none;
+    }
+
+    ul {
+      margin: auto;
+    }
+  }
+  #home {
+    &-b {
+      margin: 0 auto;
+      .services {
+        display: grid;
+        grid-template-areas:
+          "div1 div2"
+          "div3 div3";
+        grid-template-columns: repeat(2, 1fr);
+
+        // Grid Areas
+        div {
+          &:nth-child(1) {
+            grid-area: div1;
+          }
+          &:nth-child(2) {
+            grid-area: div2;
+          }
+          &:nth-child(3) {
+            grid-area: div3;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 600px) {
+  #header {
+    &-home {
+      .header-content {
+        .lead {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  #home {
+    &-a {
+      .about-content {
+        p:nth-child(1) {
+          border-bottom: 1px solid $medium-color;
+        }
+      }
+    }
+    &-b {
+      .services {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "div1"
+          "div2"
+          "div3";
+      }
+    }
+
+    &-c {
+      .about-info {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+
+    &-d {
+      .info {
+        flex-direction: column;
+
+        div:nth-child(1) {
+          border-right: none;
+          border-bottom: 1px solid $medium-color;
         }
       }
     }
   }
 
   // Utility Classes
-  .lead {
+  .section-title {
     font-size: 2rem;
   }
-
-  .btn {
-    font-size: 1.2rem;
-  }
 }
-
-// Tablet
-
-// Mobile
