@@ -410,7 +410,9 @@ h6 {
   #header-home .header-content {
     margin-top: 10rem; } }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+  .container {
+    padding: 0 0.5rem; }
   #main-nav h2 {
     display: none; }
   #main-nav ul {
@@ -420,13 +422,35 @@ h6 {
     #home-b .services {
       display: grid;
       grid-template-areas: "div1 div2" "div3 div3";
-      grid-template-columns: repeat(2, 1fr); }
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0; }
       #home-b .services div:nth-child(1) {
         grid-area: div1; }
       #home-b .services div:nth-child(2) {
         grid-area: div2; }
       #home-b .services div:nth-child(3) {
-        grid-area: div3; } }
+        grid-area: div3; }
+  #home-c {
+    padding: 0; }
+    #home-c .container {
+      padding: 0; }
+  #home-d {
+    padding: 0; }
+  #removal-a .removal-info {
+    grid-template-areas: "remcontent" "remimage" "tagline"; }
+  #removal-b .removal-signs {
+    flex-direction: column; }
+  #trim-a .trim-info {
+    flex-direction: column; }
+  #trim-b .trim-signs {
+    grid-template-areas: "signcontent" "signimage" "tagline"; }
+  #stump-a .stump-info {
+    flex-direction: column; }
+  #stump-b .stump-signs {
+    flex-direction: column;
+    padding: 0 div; }
+    #stump-b .stump-signs :nth-child(1) {
+      order: 2; } }
 
 @media (max-width: 600px) {
   #header-home .header-content .lead {

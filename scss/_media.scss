@@ -50,7 +50,13 @@
 // }
 
 // Tablet
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+  // Utility Classes
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  // Main Nav
   #main-nav {
     h2 {
       display: none;
@@ -60,6 +66,8 @@
       margin: auto;
     }
   }
+
+  // Home Page
   #home {
     &-b {
       margin: 0 auto;
@@ -69,6 +77,7 @@
           "div1 div2"
           "div3 div3";
         grid-template-columns: repeat(2, 1fr);
+        padding: 0;
 
         // Grid Areas
         div {
@@ -81,6 +90,78 @@
           &:nth-child(3) {
             grid-area: div3;
           }
+        }
+      }
+    }
+
+    // Home C
+    &-c {
+      padding: 0;
+
+      .container {
+        padding: 0;
+      }
+    }
+
+    &-d {
+      padding: 0;
+    }
+  }
+
+  // Remove Page
+  #removal {
+    &-a {
+      .removal-info {
+        grid-template-areas:
+          "remcontent"
+          "remimage"
+          "tagline";
+      }
+    }
+
+    // Section B: Signs
+    &-b {
+      .removal-signs {
+        flex-direction: column;
+      }
+    }
+  }
+
+  // Trim Page
+  #trim {
+    &-a {
+      .trim-info {
+        flex-direction: column;
+      }
+    }
+
+    // Section B: Signs
+    &-b {
+      .trim-signs {
+        grid-template-areas:
+          "signcontent"
+          "signimage"
+          "tagline";
+      }
+    }
+  }
+
+  // Stumps Page
+  #stump {
+    &-a {
+      .stump-info {
+        flex-direction: column;
+      }
+    }
+
+    // Section B: Signs
+    &-b {
+      .stump-signs {
+        flex-direction: column;
+        padding: 0
+
+        div:nth-child(1) {
+          order: 2;
         }
       }
     }
