@@ -429,6 +429,13 @@ h6 {
     padding: 0; } }
 
 @media (max-width: 600px) {
+  #main-nav ul {
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem; }
+  #header-home .header-content .title {
+    margin-top: 10rem;
+    font-size: 3rem; }
   #header-home .header-content .lead {
     font-size: 2rem; }
   #header-inner {
